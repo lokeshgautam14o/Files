@@ -6,10 +6,8 @@ class Student:
         self.branch=''
         self.year=0
         self.semester=0
-        self.prev_score=0
-       
-        user_detail=[]
-       
+        self.prev_score=0    
+         
    
     def add_user(self):
         name=input("enter name ")
@@ -19,7 +17,7 @@ class Student:
         semester=int(input("enter sem "))
         prev_score=input("enter score ")
         dict_of_user={'name': name,'age':age,'branch':branch,'year':year,'semester':semester,'prev_score':prev_score}
-        Student.user_details.append(dict_of_user);
+        Student.user_details.append(dict_of_user)
    
     def show_user(self):
         print(self.user_details)
